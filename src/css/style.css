@@ -1,0 +1,61 @@
+.header{
+    grid-area: header;
+    background-color: #edd585;
+    position: relative;
+}
+
+span{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px;
+    font-size: 42px;
+}
+
+span:hover{
+    cursor: pointer;
+}
+
+.header h2{
+    text-align: center;
+    color: purple;
+}
+
+.header h2:hover{
+    cursor: pointer;
+}
+
+.imageFluid{
+    grid-area: menu;
+    margin: 15px 150px;
+}
+
+.imageFluid img{
+    border: 2px solid #000;
+}
+
+.main{
+    grid-area: main;
+}
+
+.foodBody{
+    display: grid;
+    grid-template-areas:  
+    'header header'
+    'menu main';
+}
+
+.ingredients{
+    background-color: #aaaaaa;
+    padding-left: 30px;
+    height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.recipe{
+    background-color: #aaaaaa;
+    text-align: center;
+}
+
